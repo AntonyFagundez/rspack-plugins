@@ -1,0 +1,29 @@
+{
+  "name": "plugin-vscode-extension",
+  "version": "0.1.0",
+  "types": "./dist/index.d.ts",
+  "jsnext:source": "./src/index.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@modern-js/module-tools": "2.42.1",
+    "@modern-js/eslint-config": "2.42.1",
+    "@rspack/core": "^0.4.3",
+    "typescript": "~5.0.4",
+    "@types/node": "~16.11.7",
+    "rimraf": "~3.0.2",
+    "lint-staged": "~13.1.0",
+    "prettier": "~2.8.1",
+    "husky": "~8.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ]
+}
